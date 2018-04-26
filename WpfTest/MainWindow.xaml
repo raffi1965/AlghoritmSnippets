@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+
+    <Grid>
+        
+        
+        <Button Background="LightBlue" Content="Test attached Properies"
+                Padding="50"
+                HorizontalAlignment="Left" VerticalAlignment="Center"
+                local:ButtonExtension.BorderBrush="Red">
+        </Button>
+
+        <Button Background="LightBlue" Margin="21,19,526,358" Content="Test Behaviour">
+            <i:Interaction.Behaviors>
+                <local:RedBorderBehavior  BorderBrush="Green"/>
+            </i:Interaction.Behaviors>
+        </Button>
+
+        <local:CustomControl1 />
+        
+    </Grid>
+    
+    
+    
+</Window>
+
+
+
