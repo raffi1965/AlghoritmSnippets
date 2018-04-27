@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest", "WpfTest\WpfTest.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "СountPairsWithGivenSum", "СountPairsWithGivenSum\СountPairsWithGivenSum.csproj", "{39D1C884-32FC-4A3A-A3E7-851D244243B6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "merger", "MergerEnumerables\merger.csproj", "{2539AFEF-24D9-4F32-8C5C-8E93C584BCAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{39D1C884-32FC-4A3A-A3E7-851D244243B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39D1C884-32FC-4A3A-A3E7-851D244243B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39D1C884-32FC-4A3A-A3E7-851D244243B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2539AFEF-24D9-4F32-8C5C-8E93C584BCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2539AFEF-24D9-4F32-8C5C-8E93C584BCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2539AFEF-24D9-4F32-8C5C-8E93C584BCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2539AFEF-24D9-4F32-8C5C-8E93C584BCAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
