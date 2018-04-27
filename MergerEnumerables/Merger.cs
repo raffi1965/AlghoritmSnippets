@@ -4,29 +4,28 @@ using System.Linq;
 
 namespace merger
 {
-  public class Merger
+    public class Merger
   {
-    public IEnumerable<T> Merge<T>(IEnumerable<T> first, IEnumerable<T> second)
-        where T: IComparable
+    public IEnumerable<T> Merge<T>(IEnumerable<T> first, IEnumerable<T> second) where T: IComparable
     {
       return Merge(first.GetEnumerator(), second.GetEnumerator());
     }
 
-    public IEnumerable<T> Merge<T>(params IEnumerable<T>[] iterators)
-        where T: IComparable
+    public IEnumerable<T> Merge<T>(params IEnumerable<T>[] enumerables) where T: IComparable
     {
-      if (iterators.Length == 1)
-        return iterators[0];
-      var merged = iterators[0];
-      foreach(var iter in iterators.Skip(1))
+      if (enumerables.Length == 1)
+        return enumerables[0];
+
+      var merged = enumerables[0];
+
+      foreach (var enumerable in enumerables.Skip(1))
       {
-        merged = Merge(merged, iter);
+        merged = Merge(merged, enumerable);
       }
       return merged;
     }
 
-    public IEnumerable<T> Merge<T>(IEnumerator<T> first, IEnumerator<T> second)
-        where T: IComparable
+    public IEnumerable<T> Merge<T>(IEnumerator<T> first, IEnumerator<T> second) where T: IComparable
     {
       if (first.MoveNext() == false)
       {
